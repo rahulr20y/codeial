@@ -8,5 +8,11 @@ console.log('router loaded');
 
 router.get('/',homeController.home);
 
+router.use('/users',require('./users'));
+//router.use('/posts',require('./posts'));
+
+//for any further routes, access from here 
+//rourter.use('/routerName',require('./routerfile'));
+
 
 module.exports = router; //making it module so that outer index.js can access it
