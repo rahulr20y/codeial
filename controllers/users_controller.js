@@ -6,6 +6,10 @@ module.exports.profile = function(req,res){
     //res.end('<h1>User Profile</h1>');
      if(req.cookies.user_id){
         User.findById(req.cookies.user_id,function(err,user){
+            if(err){
+                console.log("error in finding user",err);
+                return;
+            }
             if(user){
                 return res.render('user_profile',{
                     title:"User Profile",
@@ -36,7 +40,7 @@ module.exports.signIn = function(req,res){
 }
 
 
-//get thr sign up data
+//get the sign up data
 
 module.exports.create = function(req,res){
     if(req.body.password != req.body.confirm_password){
@@ -81,4 +85,12 @@ module.exports.createSession = function(req,res){
         }
     });
 
+}
+
+//sign-out
+module.exports.signout = function(req,res){
+    //console.log(req.cookies);
+    
+    res.cookie('user_id','');
+    return res.redirect('/users/sign-in');
 }
