@@ -15,8 +15,8 @@ const passportLocal = require('./config/passport-local-strategy');
 const sassMiddleware = require('node-sass-middleware');
 
 app.use(sassMiddleware({
-    src: '/assets/scss',
-    dest: '/assets/css',
+    src: './assets/scss',
+    dest: './assets/css',
     debug: true,
     outputStyle: 'expanded',
     prefix: '/css'
