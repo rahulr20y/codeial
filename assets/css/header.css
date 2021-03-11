@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  background-color: #0f0452;
+  margin: 0%;
+}
+
+header h2 {
+  color: azure;
+  width: 85%;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0%;
+}
+
+header ul li {
+  margin: 0%;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: azure;
+}

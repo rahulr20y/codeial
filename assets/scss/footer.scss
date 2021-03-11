@@ -1,0 +1,21 @@
+footer{
+    background-color: rgb(65, 135, 201);
+    color: azure;
+    display: flex;
+    h5{
+        display: inline;
+        margin: 0%;
+    }
+    ul{
+        display: inline;
+        list-style-type: none;
+        margin: 0%;
+        li{
+            margin: 0%;
+            a{
+                text-decoration: none;
+                color: azure;
+            }
+        }
+    }
+}

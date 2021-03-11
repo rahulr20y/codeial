@@ -1,0 +1,23 @@
+header{
+    display: flex;
+    background-color: rgb(15, 4, 82);
+    margin: 0%;
+    h2{
+        color: azure;
+        width: 85%;
+    }
+    ul{
+        display: flex;
+        list-style-type: none;
+        margin: 0%;
+        li{
+            margin: 0%;
+            margin-left:20px;
+            a{
+                text-decoration: none;
+                color: azure;
+            }
+        }
+    }
+
+}

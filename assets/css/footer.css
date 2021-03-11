@@ -1,0 +1,25 @@
+footer {
+  background-color: #4187c9;
+  color: azure;
+  display: flex;
+}
+
+footer h5 {
+  display: inline;
+  margin: 0%;
+}
+
+footer ul {
+  display: inline;
+  list-style-type: none;
+  margin: 0%;
+}
+
+footer ul li {
+  margin: 0%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: azure;
+}
