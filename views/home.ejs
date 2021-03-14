@@ -1,9 +1,7 @@
+<link rel="stylesheet" href="/css/home.css">
+<div id="home-container">
+    <!-- <h1><%= title %></h1> -->
 
-<h1>
-        Codeial / <%= title %>
-    </h1>
-    
-    
     <section id="feed-posts">
         <h4>Posts</h4>
         <% if(locals.user){ %>
@@ -12,7 +10,7 @@
             <input type="submit" value="Post">
         </form>
         <% } %>
-    
+
         <div id="posts-list-container">
             <ul>
                 <% for(post of posts){ %>
@@ -32,3 +30,4 @@
             </p>
         <% } %>    
     </section>
+</div>
