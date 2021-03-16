@@ -1,4 +1,6 @@
 const { user } = require("../config/mongoose");
+const fs = require('fs');
+const path = require('path');
 
 const User =require('../models/user');
 
@@ -33,6 +35,11 @@ module.exports.update = async function(req,res){
                 user.name = req.body.name;
                 user.email = req.body.email;
                 if(req.file){
+
+                     if(user.avatar){
+                         fs.unlinkSync(path.join(__dirname,'..',user.avatar));
+                     }
+
                     //this is saving the path of the uploaded file into the avatar field in the user
                     user.avatar = User.avatarPath + '/' + req.file.filename;
                 }
